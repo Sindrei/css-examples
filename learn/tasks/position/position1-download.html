@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <title>Position: Task 1</title>
     <style>
       body {
@@ -18,26 +18,40 @@
         width: 500px;
         padding: 0.5em;
         border: 5px solid #ccc;
+        position: relative;
+        z-index: 1;
       }
       .target {
         width: 150px;
         height: 150px;
         border-radius: 5px;
-        background-color: rgb(207,232,220);
+        background-color: rgb(207, 232, 220);
         padding: 1em;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+      }
+
+      p {
+        position: relative;
+        z-index: 2;
       }
     </style>
-
   </head>
 
   <body>
-
     <div class="container">
-      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+      <p>
+        Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh
+        onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.
+      </p>
       <div class="target">Target</div>
-      <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+      <p>
+        Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot
+        courgette tatsoi pea sprouts fava bean collard greens dandelion okra
+        wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+      </p>
     </div>
-
   </body>
-
 </html>
